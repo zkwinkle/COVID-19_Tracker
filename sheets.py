@@ -111,7 +111,7 @@ def update_dataSheet():
         C=("='Estado Actual'!D%d-'Estado Actual'!D%d"%(i,i+1))
         D=("='Estado Actual'!E%d-'Estado Actual'!E%d"%(i,i+1))
         E=("='Estado Actual'!G%d"%(i))
-        F=("=AVERAGE('Estado Actual'!F%d:F%d)"%(i,i+7))
+        F=("=AVERAGE('Estado Actual'!F%d:F%d)"%(i,i+30)) #moving avg
         G=("='Estado Actual'!D%d+'Estado Actual'!E%d"%(i,i))
         H=("=G%d-G%d"%(i,i+1))
         I=("=IF(ISBLANK('Estado Actual'!F%d),,H%d/'Estado Actual'!F%d)"%(i+1,i,i+1))
